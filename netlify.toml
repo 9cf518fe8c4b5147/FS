@@ -1,6 +1,8 @@
 [[redirects]]
-  from = "/gemini-api/*"
-  to = "https://generativelanguage.googleapis.com/:splat"
-  status = 200
-  force = true
-  headers = { Host = "generativelanguage.googleapis.com" }
+from = "/gemini-proxy/*" 
+to = "https://generativelanguage.googleapis.com/:splat" 
+status = 200
+force = true
+headers = { 
+  Content-Type = "application/json" 
+}
