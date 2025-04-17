@@ -1,8 +1,11 @@
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Headers = "*"
+    Access-Control-Allow-Methods = "*"
 [[redirects]]
-from = "/gemini-proxy/*" 
-to = "https://generativelanguage.googleapis.com/:splat" 
-status = 200
-force = true
-headers = { 
-  Content-Type = "application/json" 
-}
+  from = "/*"
+  to = "https://generativelanguage.googleapis.com/:splat"
+  status = 200
+  force = true
